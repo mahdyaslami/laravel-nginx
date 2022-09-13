@@ -29,7 +29,7 @@ class NginxPublishCommandTest extends TestCase
             ->assertSuccessful();
 
         $this->assertEquals(
-            '/etc/nginx/sites-available/lingo',
+            '/etc/nginx/sites-available/site',
             static::$path
         );
 

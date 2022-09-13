@@ -74,7 +74,7 @@ class NginxLinkCommand extends Command
      */
     protected function links()
     {
-        $filename = env('NGINX_FILENAME', 'lingo');
+        $filename = env('NGINX_FILENAME', 'site');
 
         return ["/etc/nginx/sites-enabled/$filename" => "/etc/nginx/sites-available/$filename"];
     }
