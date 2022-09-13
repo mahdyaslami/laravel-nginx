@@ -17,16 +17,16 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "php": "^8.0|^8.1",
+        "illuminate/support": "^9.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0",
+        "orchestra/testbench": "^7.0",
         "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Mahdyaslami\\LaravelNginx\\": "src"
+            "MahdiAslami\\Laravel\\Nginx\\": "src"
         }
     },
     "autoload-dev": {
@@ -35,9 +35,9 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
     },
     "config": {
         "sort-packages": true
@@ -45,11 +45,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mahdyaslami\\LaravelNginx\\LaravelNginxServiceProvider"
-            ],
-            "aliases": {
-                "LaravelNginx": "Mahdyaslami\\LaravelNginx\\LaravelNginxFacade"
-            }
+                "MahdiAslami\\Laravel\\Nginx\\ServiceProvider"
+            ]
         }
     }
 }
