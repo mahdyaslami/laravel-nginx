@@ -106,7 +106,7 @@ class NginxPublishCommand extends Command
 
     private function save($content)
     {
-        $filename = env('NGINX_FILENAME', 'lingo');
+        $filename = env('NGINX_FILENAME', 'site');
 
         file_put_contents("/etc/nginx/sites-available/$filename", $content);
     }
