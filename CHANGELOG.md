@@ -2,6 +2,7 @@
 
 All notable changes to `laravel-nginx` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+## 1.0.0 - 2022-09-13
 
-- initial release
+- Add `nginx:publish` command.
+- Add `nginx:link` command.
