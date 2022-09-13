@@ -1,7 +1,7 @@
 # Laravel Nginx
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mahdyaslami/laravel-nginx.svg?style=flat-square)](https://packagist.org/packages/mahdyaslami/laravel-nginx)
-[![Total Downloads](https://img.shields.io/packagist/dt/mahdyaslami/laravel-nginx.svg?style=flat-square)](https://packagist.org/packages/mahdyaslami/laravel-nginx)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mahdiaslami/laravel-nginx.svg?style=flat-square)](https://packagist.org/packages/mahdiaslami/laravel-nginx)
+[![Total Downloads](https://img.shields.io/packagist/dt/mahdiaslami/laravel-nginx.svg?style=flat-square)](https://packagist.org/packages/mahdiaslami/laravel-nginx)
 ![GitHub Actions](https://github.com/mahdyaslami/laravel-nginx/actions/workflows/main.yml/badge.svg)
 
 This package prepares the commands for creating Nginx config from the Blade format.
@@ -11,7 +11,7 @@ This package prepares the commands for creating Nginx config from the Blade form
 You can install the package via composer:
 
 ```bash
-composer require mahdyaslami/laravel-nginx
+composer require mahdiaslami/laravel-nginx
 ```
 
 ## Usage
